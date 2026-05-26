@@ -777,37 +777,6 @@ footer {
 }
 
 /* ===========================
-   專屬英文版頁尾 (English Footer)
-=========================== */
-/* 1. 調整頁尾總容器：強制桌機版並排 */
-.footer-container.en-footer {
-  flex-wrap: nowrap; /* 關鍵：強制不換行，讓左右並排 */
-  justify-content: space-between; /* 將左右兩區塊拉開 */
-  gap: 3rem; /* 左右間距 */
-}
-
-/* 2. 讓左右兩半部平分寬度 */
-.footer-container.en-footer .footer-left,
-.footer-container.en-footer .footer-right {
-  flex: 1; /* 關鍵：強迫兩邊平分空間，過長的文字就會在自己的區塊內換行 */
-}
-
-/* 3. 允許長文字自然換行 */
-.footer-container.en-footer .zh-title h4,
-.footer-container.en-footer .contact-info p,
-.footer-container.en-footer .copyright-info p {
-  white-space: normal; 
-}
-
-/* 4. 手機與平板版：螢幕太小時，恢復成上下排列 */
-@media (max-width: 1000px) {
-  .footer-container.en-footer {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-}
-
-/* ===========================
    頁尾 RWD (手機/平板調整)
 =========================== */
 @media (max-width: 1000px) {
@@ -867,7 +836,6 @@ footer {
 .pagination-btn:hover { background-color: #f5f7fa; border-color: #ccc; }
 .pagination-btn.active { background-color: #1e3a8a; border-color: #1e3a8a; color: #fff; font-weight: bold; cursor: default; }
 .pagination-btn.disabled { color: #aaa; border-color: #eee; background-color: #f9f9f9; cursor: not-allowed; }
-
 
 /* ===========================
    文章頁面 (Article Page)

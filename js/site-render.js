@@ -94,7 +94,7 @@
     const f = DATA.site.footer[key];
     return `
       <footer>
-        <div class="footer-container ${lang === "en" ? "en-footer" : ""}">
+        <div class="footer-container">
           <div class="footer-left">
             <div class="zh-title">
               ${f.titleLines.map(t => `<h4>${esc(t)}</h4>`).join("")}
